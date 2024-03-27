@@ -32,6 +32,7 @@ jobs:
   job2:
     runs-on: ubuntu-latest
     environment: test
+    needs: job1
 
     steps:
         - uses: actions/checkout@v3
